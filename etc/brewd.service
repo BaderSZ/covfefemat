@@ -1,0 +1,8 @@
+[Unit]
+Description=Brew Daemon for XHTCPCP(S)
+
+[Service]
+ExecStart=python3 /usr/local/bin/brewd.py
+
+[Install]
+WantedBy=multi-user.target

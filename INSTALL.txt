@@ -1,0 +1,10 @@
+To install the Python client, run:
+
+ $ make install-client
+
+The brewd server can be installed via 
+
+ $ make install-server
+
+
+'make install' runs both for you. 
