@@ -26,3 +26,9 @@ install-server:
 	sudo cp ${PWD}/server/* ${INSTALL_DIR}
 	sudo ln -s ${INSTALL_DIR}/brewd.py /usr/local/bin/${SERVER}
 
+#Doc section
+doc:
+	pdflatex -halt-on-error -output-directory docs/ -output-format pdf docs/XHTCPCP.tex
+
+clean-doc:
+	rm -f docs/{XHTCPCP.pdf,XHTCPCP.toc,XHTCPCP.aux,XHTCPCP.out,XHTCPCP.log}
